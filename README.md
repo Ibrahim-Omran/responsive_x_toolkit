@@ -187,18 +187,18 @@ else
 
 ```dart
 ResponsiveLayout(
-breakpoints: ResponsiveBreakpoints(
-mobile: 480,
-tablet: 768,
-desktop: 1024,
-largeDesktop: 1440,
-),
-mobile: Text('Mobile'),
-tablet: Text('Tablet'),
-desktop: Text('Desktop'),
-largeDesktop: Text('Large Desktop'
-),
+  breakpoints: ResponsiveBreakpoints(
+    mobile: 480,
+    tablet: 768,
+    desktop: 1024,
+    largeDesktop: 1440,
+  ),
+  mobile: Text('Mobile'),           // واجهة الموبايل
+  tablet: Text('Tablet'),           // واجهة التابلت
+  desktop: Text('Desktop'),         // واجهة الديسكتوب
+  largeDesktop: Text('Large Desktop'), // واجهة الشاشات الكبيرة
 )
+
 ```
 
 ### Responsive Orientation
