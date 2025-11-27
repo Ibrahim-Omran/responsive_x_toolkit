@@ -51,7 +51,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  responsive_x_toolkit: ^1.0.2
+  responsive_x_toolkit: ^1.0.3
 ```
 
 ### 2. Import Package
