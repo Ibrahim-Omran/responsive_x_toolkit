@@ -60,24 +60,40 @@ dependencies:
 import 'package:responsive_x_toolkit/responsive_x.dart';
 ```
 
-### 3. Wrap Your App
+[//]: # ()
+[//]: # (### 3. Wrap Your App)
 
-```dart
-void main() {
-  runApp(MyApp());
-}
+[//]: # ()
+[//]: # (```dart)
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: ResponsiveWrapper(
-        child: YourHomePage(),
-      ),
-    );
-  }
-}
-```
+[//]: # (void main&#40;&#41; {)
+
+[//]: # (  runApp&#40;MyApp&#40;&#41;&#41;;)
+
+[//]: # (})
+
+[//]: # ()
+[//]: # (class MyApp extends StatelessWidget {)
+
+[//]: # (  @override)
+
+[//]: # (  Widget build&#40;BuildContext context&#41; {)
+
+[//]: # (    return MaterialApp&#40;)
+
+[//]: # (      home: ResponsiveWrapper&#40;)
+
+[//]: # (        child: YourHomePage&#40;&#41;,)
+
+[//]: # (      &#41;,)
+
+[//]: # (    &#41;;)
+
+[//]: # (  })
+
+[//]: # (})
+
+[//]: # (```)
 
 ---
 
