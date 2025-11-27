@@ -8,3 +8,6 @@
 ## [1.0.1] - 2025-11-27
 - update README.md
 - add example
+
+## [1.0.2] - 2025-11-27
+- update README.md

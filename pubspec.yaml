@@ -1,6 +1,6 @@
 name: responsive_x_toolkit
 description: "A powerful responsive toolkit for Flutter. Fonts, spacing, icons, radius & sizes that scale perfectly on all screens."
-version: 1.0.1
+version: 1.0.2
 homepage: https://pub.dev/
 
 environment:

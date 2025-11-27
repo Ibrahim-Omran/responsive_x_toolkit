@@ -51,13 +51,13 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  responsive_x: ^1.0.0
+  responsive_x_toolkit: ^1.0.2
 ```
 
 ### 2. Import Package
 
 ```dart
-import 'package:responsive_x/responsive_x.dart';
+import 'package:responsive_x_toolkit/responsive_x.dart';
 ```
 
 ### 3. Wrap Your App
