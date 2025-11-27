@@ -271,7 +271,7 @@ If you find this package helpful, please consider:
 - 📢 Sharing with other developers
 
 **Built with ❤️ for the Flutter community**
-**Developed by Ibrahim Omran**
+- **Developed by Ibrahim Omran**
 
 --- 
 
