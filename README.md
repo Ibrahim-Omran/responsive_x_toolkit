@@ -186,15 +186,19 @@ else
 ### Custom Breakpoints
 
 ```dart
-ResponsiveWrapper(
-  breakpoints: ResponsiveBreakpoints(
-    mobile: 480,
-    tablet: 768,
-    desktop: 1024,
-    largeDesktop: 1440,
-  ),
-  child: YourApp(),
-);
+ResponsiveLayout(
+breakpoints: ResponsiveBreakpoints(
+mobile: 480,
+tablet: 768,
+desktop: 1024,
+largeDesktop: 1440,
+),
+mobile: Text('Mobile'),
+tablet: Text('Tablet'),
+desktop: Text('Desktop'),
+largeDesktop: Text('Large Desktop'
+),
+)
 ```
 
 ### Responsive Orientation

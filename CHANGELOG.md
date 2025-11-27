@@ -16,3 +16,7 @@
 - add Conditional Layout 
 - add Custom Breakpoints
 
+## [1.0.4] - 2025-11-27
+- update README.md
+
+
