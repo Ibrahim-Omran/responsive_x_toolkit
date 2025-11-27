@@ -193,10 +193,10 @@ ResponsiveLayout(
     desktop: 1024,
     largeDesktop: 1440,
   ),
-  mobile: Text('Mobile'),           // واجهة الموبايل
-  tablet: Text('Tablet'),           // واجهة التابلت
-  desktop: Text('Desktop'),         // واجهة الديسكتوب
-  largeDesktop: Text('Large Desktop'), // واجهة الشاشات الكبيرة
+  mobile: Text('Mobile'),           // Mobile Screen
+  tablet: Text('Tablet'),           // Tablet Screen
+  desktop: Text('Desktop'),         // Desktop Screen
+  largeDesktop: Text('Large Desktop'), // Large Desktop Screen
 )
 
 ```
