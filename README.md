@@ -276,4 +276,3 @@ If you find this package helpful, please consider:
 --- 
 
 *ResponsiveXToolKit - Make every pixel count*
-```
