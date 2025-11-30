@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 class ResponsiveBreakpoints {
   final double mobile;
   final double tablet;
-  final double desktop;
-  final double largeDesktop;
+  final double maxDesktopWidth;
+  final double standardDesktopWidth;
 
   const ResponsiveBreakpoints({
     required this.mobile,
     required this.tablet,
-    required this.desktop,
-    required this.largeDesktop,
+    required this.maxDesktopWidth,
+    required this.standardDesktopWidth,
   });
 }
 
@@ -25,10 +25,10 @@ class ResponsiveLayout extends StatelessWidget {
     required this.desktop,
     required this.largeDesktop,
     this.breakpoints = const ResponsiveBreakpoints(
-      mobile: 480,
-      tablet: 768,
-      desktop: 1024,
-      largeDesktop: 1440,
+      mobile: 375.0,
+      tablet: 768.0,
+      maxDesktopWidth: 1920.0,
+      standardDesktopWidth: 1024.0,
     ),
   });
 
@@ -36,8 +36,8 @@ class ResponsiveLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     if (width < breakpoints.tablet) return mobile;
-    if (width < breakpoints.desktop) return tablet;
-    if (width < breakpoints.largeDesktop) return desktop;
+    if (width < breakpoints.standardDesktopWidth) return tablet;
+    if (width < breakpoints.maxDesktopWidth) return desktop;
     return largeDesktop;
   }
 }

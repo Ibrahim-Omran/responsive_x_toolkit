@@ -21,30 +21,30 @@ class MyApp extends StatelessWidget {
               // 🔠 Font Size
               Text(
                 "Hello",
-                style: TextStyle(fontSize: 16.f(context)),
+                style: TextStyle(fontSize: 16.x(context)),
               ),
 
               // 📏 Spacing / Padding / Margin
-              SizedBox(height: 20.s(context)),
+              SizedBox(height: 20.x(context)),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 12.s(context)),
+                padding: EdgeInsets.symmetric(horizontal: 12.x(context)),
                 child: Container(
                   // 📐 Width / Height
-                  width: 150.w(context),
-                  height: 200.h(context),
+                  width: 150.x(context),
+                  height: 200.x(context),
                   decoration: BoxDecoration(
                     // 🔘 Border Radius
-                    borderRadius: BorderRadius.circular(18.r(context)),
+                    borderRadius: BorderRadius.circular(18.x(context)),
                     color: Colors.blue,
                   ),
                 ),
               ),
 
               // 🎯 Icon Size
-              Icon(Icons.home, size: 24.ic(context)),
+              Icon(Icons.home, size: 24.x(context)),
 
               // 🖥 Responsive Layout Example
-              SizedBox(height: 20.s(context)),
+              SizedBox(height: 20.x(context)),
               ResponsiveLayout(
                 mobile: Text("Mobile Layout"),
                 tablet: Text("Tablet Layout"),

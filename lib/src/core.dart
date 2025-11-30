@@ -4,41 +4,58 @@ import 'breakpoints.dart';
 
 
 class ResponsiveX {
-// Scale factors
-  static const double mobileScale = 0.90;
+  // Scaling factors for different screen sizes
+  static const double maxDesktopScale = 1.2;
+
+  static const double desktopScale = 1.1;
+
   static const double tabletScale = 1.05;
-  static const double desktopScale = 1.15;
-  static const double largeDesktopScale = 1.22;
+
+  static const double mobileScale = 0.9;
 
 
-  static double scale(BuildContext context, double base) {
-    final width = MediaQuery.of(context).size.width;
-    final density = MediaQuery.of(context).devicePixelRatio;
+
+  static double scaleSize(BuildContext context, double baseSize) {
+
+    double screenWidth = MediaQuery.sizeOf(context).width;
+
+    double pixelDensity = MediaQuery.devicePixelRatioOf(context);
+
+    double scaleFactor;
 
 
-    double factor;
 
+    if (screenWidth >= RXBreakpoints.maxDesktopWidth) {
 
-    if (width >= RXBreakpoints.largeDesktop) {
-      factor = largeDesktopScale;
-    } else if (width >= RXBreakpoints.desktop) {
-      factor = desktopScale;
-    } else if (width >= RXBreakpoints.tablet) {
-      factor = tabletScale;
+      scaleFactor = (screenWidth / RXBreakpoints.maxDesktopWidth) * maxDesktopScale;
+
+    } else if (screenWidth >= RXBreakpoints.standardDesktopWidth) {
+
+      scaleFactor = (screenWidth / RXBreakpoints.maxDesktopWidth) * desktopScale;
+
+    } else if (screenWidth >= RXBreakpoints.tabletBreakpoint) {
+
+      scaleFactor = (screenWidth / RXBreakpoints.standardDesktopWidth) * tabletScale;
+
     } else {
-      factor = mobileScale;
+
+      scaleFactor = (screenWidth / RXBreakpoints.mobileBreakpoint) * mobileScale;
+
     }
 
 
-    final widthRatio = (width / 375).clamp(0.85, 1.35);
+
+    // Ensuring the scale remains within a reasonable range
+
+    scaleFactor = scaleFactor.clamp(0.8, 1.4);
 
 
-    double finalScale = factor * widthRatio;
 
+    // Final size calculation with pixel density adjustment
 
-    final minValue = density > 2 ? density * 0.70 : 8.0;
+    return math.max((baseSize * scaleFactor), (pixelDensity > 2 ? pixelDensity * 0.75 : 8.0));
 
-
-    return math.max(base * finalScale, minValue);
   }
 }
+
+

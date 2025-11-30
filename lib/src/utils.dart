@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
 import 'extensions.dart';
 
-
-// Small utilities helpful across projects
-
-
 class RXUtils {
 // Common paddings
   static EdgeInsets paddingAll(BuildContext context, double value) =>
-      EdgeInsets.all(value.s(context));
+      EdgeInsets.all(value.x(context));
 
 
   static EdgeInsets paddingSymmetric(
       BuildContext context, double horizontal, double vertical) =>
       EdgeInsets.symmetric(
-        horizontal: horizontal.s(context),
-        vertical: vertical.s(context),
+        horizontal: horizontal.x(context),
+        vertical: vertical.x(context),
       );
 
 
@@ -24,7 +20,7 @@ class RXUtils {
       {double radius = 12, Color? color}) =>
       BoxDecoration(
         color: color ?? Colors.white,
-        borderRadius: BorderRadius.circular(radius.r(context)),
+        borderRadius: BorderRadius.circular(radius.x(context)),
       );
 
 
@@ -37,14 +33,14 @@ class RXUtils {
         double horizontalPadding = 16,
       }) {
     return SizedBox(
-      height: height.h(context),
+      height: height.x(context),
       child: ElevatedButton(
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
           padding: EdgeInsets.symmetric(
-              horizontal: horizontalPadding.s(context)),
+              horizontal: horizontalPadding.x(context)),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8.r(context)),
+            borderRadius: BorderRadius.circular(8.x(context)),
           ),
         ),
         child: child,

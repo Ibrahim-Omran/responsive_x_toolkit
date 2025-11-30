@@ -1,7 +1,9 @@
 class RXBreakpoints {
-  static const double mobile = 480;
-  static const double smallTablet = 600; // optional
-  static const double tablet = 768;
-  static const double desktop = 1024;
-  static const double largeDesktop = 1600;
+  static const double maxDesktopWidth = 1920.0;
+
+  static const double standardDesktopWidth = 1024.0;
+
+  static const double tabletBreakpoint = 768.0;
+
+  static const double mobileBreakpoint = 375.0;
 }

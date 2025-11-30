@@ -19,4 +19,8 @@
 ## [1.0.4] - 2025-11-27
 - update README.md
 
+## [1.0.5] - 2025-11-27
+- update README.md
+
+
 
